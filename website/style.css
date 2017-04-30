@@ -1,0 +1,52 @@
+@charset "UTF-8";
+/* CSS Document */
+body {
+	margin: 0;
+}
+.wrapper {
+	width: 100%;
+}
+.header {
+	background-color: #6666Fa;
+	color: #000000;
+	height: 50px;
+	align-content: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	border-bottom: solid;
+	border-color: #c1c1c1;
+}
+.header a {
+	color: white;
+	text-decoration: none;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", san-serif
+}
+.header a:hover {
+	color: #a1a1a1
+}
+.header img {
+	padding-left: 10px;
+}
+.header table {
+	padding-left: 800px;
+	display: inline-block;
+	border-spacing: 10px 10px;
+}
+.header tr {
+	padding: 40px;
+}
+.header img {
+	height: 50px;
+	width: 150px;
+}
+
+
+.footer {
+	background-color: #BB2B2D;
+}
+.footer img {
+	padding: 3px;
+	border-radius: 30%;
+}

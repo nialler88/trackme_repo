@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+.index_body1 {
+	background-image: url(images/niall.png);
+	background-repeat: no-repeat;
+	background-size: 100% 800px;
+	border-image-width: auto;
+	color: #D1D1D1;
+	border-bottom: solid;
+	border-color: #4D8F58;
+	bottom: 0;
+}
+.index_body1 h1, h2 {
+	text-indent: 100px;
+}
+.index_body1 h1 {
+	font-size: 50px;
+	font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+}
+.index_body2 {
+	background-color: #666666;
+	top: 0;
+	width: 100%;
+	border-bottom: solid;
+	border-color: red;
+	bottom: 0;
+}
+.index_body2 h1 {
+	font-size: 30px;
+}
+.index_body2 li {
+	text-indent: 100px;
+	text-transform: uppercase;
+}
+.index_body2 ul {
+	padding-left: 40px;
+	padding-right: 40px;
+	display: inline-block;
+}
+.index_body3 {
+	color: white;
+	top: 0;
+	background-color: black;
+	border-bottom: solid;
+	border-color: #647CFF;
+}
+.index_body3 ul {
+	display: inline-block;
+	padding-left: 50px;
+	padding-right: 40px;
+}
+.index_body3 li {
+	text-align: center;
+	text-indent: 100px;
+	text-transform: uppercase;
+}
+.index_body3 p {
+	color: white;
+}
+

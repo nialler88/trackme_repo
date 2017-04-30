@@ -1,0 +1,42 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.h2_top{
+	text-align:center; color:blue;}
+h3{text-align:center;}
+
+.imgcontainer{text-align:center;}
+
+input[type=text], input[type=password], input[type=email],select {
+    width: 500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    text-align:center;
+    box-sizing: border-box;
+}
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 500px;
+}
+.container{text-align:center;}
+span{display:block;}
+.cancelbtn {
+	
+    width: auto;
+    padding: 10px 18px;
+    background-color: #f44336;
+	
+}
+
+.register_footer
+{
+	background-color:#BB2B2D;
+}
+.register_footer img{
+	padding:3px;border-radius:30%;}

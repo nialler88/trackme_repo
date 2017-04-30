@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/logo2.png">
+<meta charset="UTF-8">
+<title>Player Routes</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="routes.css" rel="stylesheet" type="text/css">
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="/testRoutes.js" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false"
+      type="text/javascript"></script>
+
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp0DSjvBoPI5joSUTm0gz1kdwhwb4cKvU&callback=initMap"
+    type="text/javascript"></script>
+  -->
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header"> <img src="images/header_logo copy.png" />
+    <table align="center">
+      <tr>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="routes.html">My Routes</a></th>
+        <th rowspan="2"><a href="compare.html">Compare</a></th>
+        
+      </tr>
+    </table>
+  </div>
+  
+  
+  <div class="routes_body">
+   
+    <!--
+  <script>
+          var vizDiv = document.getElementById('viz');
+          var vizURL = "https://public.tableau.com/profile/publish/example_Data/Sheet1#!/publish-confirm";
+          var options = {
+                          width:'600px',
+                          height:'500px'
+                          
+                          }
+              var viz = new tableauSoftware.Viz(vizDiv, vizURL, options);
+  </script>
+  -->
+    <table>
+      <tr rowspan="10">
+        <th >
+        
+        <select id="options" name="sport" required>
+        
+            <option value="">Please Choose Match:</option>
+          </select>
+          <button id="popButton">Populate Table</button>
+          
+          </th>
+          </tr>
+          </table>
+           <p align="center">
+ 
+ 
+ <table border="1">
+ <tr>
+<th>Player Name: </th> <th id="routeName"></th></tr>
+<th>Time in Play: </th> <th id="routeTimePlay"></th></tr>
+<tr ><th>All Games Played:</th><th id="routeOpp"></th></tr>
+
+<th>Distance for each Game: </th> <th id="routeDistance"></th></tr>
+<th>Position Played in each Game: </th> <th id="routePosition"></th></tr>
+<th>Average (Active) Speed for each Game: </th> <th id="routePace"></th></tr>
+<th>Average Speed for each Game: </th> <th id="routeAvSpeed"></th></tr>
+<th>Max Speed: </th> <th id="routeMax"></th></tr>
+<th>Calories Burned: </th> <th id="routeCalories"></th></tr>
+<th>Post Game Hydration: </th> <th id="routeHydrate"></th></tr>
+</table>
+
+</p>
+ 
+  <div class="tableMap">  <h2 align="center" >HeatMap</h2>
+    <p align="center">
+
+<iframe  id="heatFrame" src=""width="1000" height="400" scrolling="no" frameborder="1"></iframe>
+ </p>
+
+    <!--
+    <ul style="list-style-type:none;">
+    <li>Player Name</li><li>Niall Harney</li>
+    </ul>
+    -->
+    <h2 align="center">Speed Chart</h2>
+
+ <p align="center">
+    <iframe  id="speedFrame"width="1000" height="400" scrolling="no" frameborder="1" src=""></iframe>
+    </p></div>
+   
+    <!--<div class="map" id="map" style="width: 400px; height: 300px">
+  
+     <script type="text/javascript"> 
+        var map = new GMap2(document.getElementById("map"));
+        map.setCenter(new GLatLng(52.24643, -6.7315), 17);
+     </script>
+    </div>--> 
+    
+  </div>
+  <div class="footer">
+  <a href="https://www.facebook.com/TrackMe-1892667360976316/"><img src="images/facebook_icon.png" width="30" height="30" alt="Facebook"/></a>
+  <a href="https://www.instagram.com/trackme_wit/"><img src="images/insta_icon.png" width="30" height="30" 				alt="Instagram"/></a>
+  <a href="https://twitter.com/TrackMe_WIT"><img src="images/twitter_icon.png" width="30" height="30" alt="Twitter	"/></a>
+  </div>
+</div>
+
+
+
+</body>
+</html>

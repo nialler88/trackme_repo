@@ -1,0 +1,80 @@
+
+
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/logo2.png">
+<meta charset="UTF-8">
+<title>Registration</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="register.css" rel="stylesheet" type="text/css">
+
+<script language="javascript" >
+
+function Validate() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("confirm_password").value;
+        if (password != confirmPassword) {
+            alert("Passwords do not match.");
+            return false;
+        }
+        return true;
+    }
+
+</script>
+<script language="javascript">
+
+
+</script>
+</head>
+
+<body>
+<div class="header">
+<img src="images/header_logo copy.png" />
+<table align="center"><tr>
+<th><a href="index.html">Home</a></th>
+<!--<th><a href="login.html">Login</a></th>-->
+<th rowspan="2"><a href="register.html">Register</a></th>
+</tr>
+</table>
+</div>
+<div class="register_body"><h2 class="h2_top"><br><br>Welcome to TrackMe</h2><br><h3>Please Fill in the Fields and Press Submit to Register</h3>
+
+<form action="../api/users" id="register_form" method="post" onSubmit="return Validate()">
+	<div class="imgcontainer">
+    	<img src="images/images.png" alt="register_image" class="register_image">
+    </div>
+    <div class="container">
+     <span><label for="email"><b>Email</b></label></span><input type="email" name="email" placeholder="Enter Email" required>
+    	<span><label for="name"><b>Name </b></label> </span><input type="text" name="name" placeholder="Enter Name" required>
+       
+       
+        <span><label for="password"><b>Password</b></label></span>  <input type="password" name="password"placeholder="Password" id="password" required>
+        <span><label for="confirm_password"><b>Confirm Password</b></label></span><input type="password" name="confirm_password"placeholder="Confirm Password" id="confirm_password" required> 
+        
+        <span><label><b>What Sport Do You Play?</b></label></span>
+        <select name="sport" required>
+        		<option value="">Please Choose One:</option>
+              <option value="Soccer">Soccer</option>
+              <option value="Football">Football</option>
+              <option value="Hurling">Hurling</option>
+              <option value="Running">Running</option>
+         </select>
+         <span><button type="submit" onClick="Validate()">Register</button></span>
+    </div>
+
+</form>
+
+</div>
+<div class="container" style="background-color:#F1F1F1">
+	 <button type="button" class="cancelbtn">Cancel</button>
+</div>
+
+<!--Footer-->
+<div class="footer">
+<a href="https://www.facebook.com/TrackMe-1892667360976316/"><img src="images/facebook_icon.png" width="30" height="30" alt="Facebook"/></a>
+<a href="https://www.instagram.com/trackme_wit/"><img src="images/insta_icon.png" width="30" height="30" alt="Instagram"/></a>
+<a href="https://twitter.com/TrackMe_WIT"><img src="images/twitter_icon.png" width="30" height="30" alt="Twitter	"/></a>
+    </div>
+</body>
+</html>

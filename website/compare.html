@@ -1,0 +1,188 @@
+
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="images/logo2.png">
+<meta charset="UTF-8">
+<title>Player Comparison</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="compare.css" rel="stylesheet" type="text/css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="/testCompare.js" type="text/javascript"></script>
+<script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=false"
+      type="text/javascript"></script>
+
+<!--  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDp0DSjvBoPI5joSUTm0gz1kdwhwb4cKvU&callback=initMap"
+    type="text/javascript"></script>
+  -->
+</head>
+
+<body>
+<div class="wrapper">
+  <div class="header"> <img src="images/header_logo copy.png" />
+    <table align="center">
+      <tr>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="routes.html">My Routes</a></th>
+        <th rowspan="2"><a href="compare.html">Compare</a></th>
+        
+      </tr>
+    </table>
+  </div>
+  <div class="compare_body">
+  <div class="compareTable">
+    <table>
+      <tr>
+        <td><select name="sport" id="options1"required>
+            <option value="">Please Choose Player to Compare:</option>
+           
+          </select></td>
+        <td><select name="sport" id="options2" required >
+            <option value="">Please Select Player to Compare With:</option>
+             
+          </select></td>
+      </tr>
+      <tr>
+        <td><select name="sport" id="options1_2" required>
+            <option value="">Please Select From Above First:</option>
+           
+          </select></td>
+        <td><select name="sport2" id="options2_2" required>
+                <option value="">Please Select From Above First</option>
+            
+          </select></td>
+      </tr>
+    </table>
+    </div>
+    <hr>
+     <table id="table2" style="margin-left:30px;">
+      <tr>
+        <th>Player Name: </th>
+        <th id="compName1"> </th>
+      </tr>
+       <tr>
+        <th>Time in Play: </th>
+        <th id="compTime1"></th>
+      </tr>
+      <tr>
+        <th>Team Played: </th>
+        <th id="compOpp1"> </th>
+      </tr>
+      <tr>
+        <th>Total Distance: </th>
+        <th id="compDistance1"></th>
+      </tr>
+      <tr>
+        <th>Average (Active) Speed: </th>
+        <th id="compPace1"></th>
+      </tr>
+      <tr>
+        <th>Average Speed: </th>
+        <th id="compAvSpeed1"></th>
+      </tr>
+      <tr>
+        <th>Position: </th>
+        <th id="compPosition1"></th>
+      </tr>
+       <tr>
+        <th>Max Speed: </th>
+        <th id="compMax1"></th>
+      </tr>
+      <tr>
+        <th>Calories Burned: </th>
+        <th id="compCalories1"></th>
+      </tr>
+       <tr>
+        <th>Post Match Hydration: </th>
+        <th id="compHydrate1"></th>
+      </tr>
+    </table>
+    
+    
+    <table align="right" style="margin-right:30px;">
+      <tr>
+        <th>Player Name: </th>
+        <th id="compName2">  </th>
+      </tr>
+       <tr>
+        <th>Time in Play: </th>
+        <th id="compTime2"></th>
+      </tr>
+      <tr>
+        <th>Team Played: </th>
+        <th id="compOpp2"> </th>
+      </tr>
+      <tr>
+        <th>Total Distance: </th>
+        <th id="compDistance2"></th>
+      </tr>
+      <tr>
+        <th>Average (Active) Speed: </th>
+        <th id="compPace2"></th>
+      </tr>
+      <tr>
+        <th>Average Speed: </th>
+        <th id="compAvSpeed2"></th>
+      </tr>
+      <tr>
+        <th>Position: </th>
+        <th id="compPosition2"></th>
+      </tr>
+       <tr>
+        <th>Max Speed: </th>
+        <th id="compMax2"></th>
+      </tr>
+      <tr>
+        <th>Calories Burned: </th>
+        <th id="compCalories2"></th>
+      </tr>
+       <tr>
+        <th>Post Match Hydration: </th>
+        <th id="compHydrate2"></th>
+      </tr>
+    </table>
+    <div class="tableMap">
+      <h2 align="center" >HeatMap</h2>
+      <iframe id="compareHeat1"class="inline_map1" width="500" height="400" scrolling="no" frameborder="1" src=""></iframe>
+      <p align="right">
+        <iframe id="compareHeat2" class="inline_map2" width="500" height="400" scrolling="no" frameborder="1" src=""></iframe>
+      </p>
+    </div>
+   
+    
+    <!--
+    <ul style="list-style-type:none;">
+    <li>Player Name</li><li>Niall Harney</li>
+    </ul>
+    -->
+    <div class="tableSpeed">
+      <h2 align="center">Speed Chart</h2>
+      
+      <!--  Don't forget to resi-->
+      <p align="left">
+        <iframe id="compareSpeed1"class="inline_speed1" width="500" height="400" scrolling="no" frameborder="1" src=""></iframe>
+      </p>
+      <p align="right">
+        <iframe id="compareSpeed2" class="inline_speed2" width="500" height="400" scrolling="no" frameborder="1" src=""></iframe>
+      </p>
+    </div>
+    <!--<div class="map" id="map" style="width: 400px; height: 300px">
+  
+     <script type="text/javascript"> 
+        var map = new GMap2(document.getElementById("map"));
+        map.setCenter(new GLatLng(52.24643, -6.7315), 17);
+     </script>
+    </div>--> 
+    
+  </div>
+  <div class="footer">
+  <a href="https://www.facebook.com/TrackMe-1892667360976316/"><img src="images/facebook_icon.png" width="30" height="30" alt="Facebook"/></a>
+  <a href="https://www.instagram.com/trackme_wit/"><img src="images/insta_icon.png" width="30" height="30" alt="Instagram"/></a>
+  <a href="https://twitter.com/TrackMe_WIT"><img src="images/twitter_icon.png" width="30" height="30" alt="Twitter	"/></a>
+  </div>
+</div>
+</body>
+</html>
